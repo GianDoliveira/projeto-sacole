@@ -1,3 +1,4 @@
+/*                Background                */
 .image::before {
     content: "";
     background-image: url("./Geladinhos.jpg");
@@ -8,13 +9,16 @@
     filter: blur(4px) opacity(70%) brightness(70%);
     position: absolute;
     z-index: -1;
-}  
+}
 
 * {
     box-sizing: 0;
     margin: 0;
 }
+
+/*                Navbar                */
 nav {
+    display: flex;
     width: 100%;
     height: 5em;
     background-color: yellow;
@@ -22,6 +26,7 @@ nav {
     justify-content: flex-start;
     padding: 1em;
 }
+
 .burger-menu {
     height: 100%;
     width: 4em;
@@ -30,18 +35,19 @@ nav {
     align-items: flex-start;
     justify-content: space-between;
     cursor: pointer;
-    
+    z-index: 1;
 }
 .burger-bar {
     width: 4em;
     height: 0.5em;
-    background-color: aqua;
+    background-color: black;
     border-radius: 0.5em;
 }
 .menu {
-    width: 50%;
+    width: 100%;
     height: 100vh;
-    background-color: green;
+    background: rgb(195,142,34);
+    background: linear-gradient(63deg, rgba(195,142,34,1) 0%, rgba(255,209,110,1) 51%);
     position: absolute;
     top: 0;
     z-index: -1;
@@ -52,19 +58,24 @@ nav {
 .visible {
     display: inherit;
 }
-.burger-bar.clicked:nth-child(1){
+
+.burger-bar.clicked:nth-child(1) {
     transform: rotate(45deg) translate(0.75em, 1.25em);
     transition: ease-out 0.5s;
 }
-.burger-bar.clicked:nth-child(2){
+
+.burger-bar.clicked:nth-child(2) {
     transform: scale(0.1);
     transition: ease-out 0.5s;
 }
-.burger-bar.clicked:nth-child(3){
+
+.burger-bar.clicked:nth-child(3) {
     transform: rotate(135deg) translate(-0.5em, 1em);
     transition: ease-out 0.5s;
 }
+
 .burger-bar.unclicked {
     transform: rotate(0) translate(0);
     transition: cubic-bezier(0.175, 0.885, 0.32, 1275) 0.5%;
 }
+
