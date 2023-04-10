@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from "react-scroll"
 
 export default function Navbar() {
 
@@ -31,7 +32,7 @@ export default function Navbar() {
             </nav>
 
             <div className={menu_class}>
-                <div className="z-10 relative top-48 text-3xl list-none flex flex-col justify-center items-center font-[Dosis]">
+                <div className="z-10 relative top-48 text-3xl list-none flex flex-col justify-center items-center font-[Dosis] ">
                     <li className="py-4"><a>Inicio</a></li>
                     <li className="py-4"><a>Sabores</a></li>
                     <li className="py-4"><a>Preços</a></li>
