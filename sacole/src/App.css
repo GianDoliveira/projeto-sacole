@@ -14,6 +14,7 @@
 * {
     box-sizing: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 /*                Navbar                */
@@ -47,7 +48,7 @@ nav {
     height: 100vh;
     background: rgb(195,142,34);
     background: linear-gradient(63deg, rgba(195,142,34,1) 0%, rgba(255,209,110,1) 51%);
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: -1;
 }
