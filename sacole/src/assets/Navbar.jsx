@@ -33,9 +33,18 @@ export default function Navbar() {
 
             <div className={menu_class}>
                 <div className="z-10 relative top-48 text-3xl list-none flex flex-col justify-center items-center font-[Dosis] ">
-                    <li className="py-4"><Link activeClass="active" to="start" spy={true} smooth={true} offset={50} duration={500} data-text="ToBottom">Início</Link></li>
-                    <li className="py-4"><Link activeClass="active" to="flavors" spy={true} smooth={true} offset={50} duration={500} data-text="ToBottom">Sabores</Link></li>
-                    <li className="py-4"><a>Preços</a></li>
+                    <li className="py-4">
+                        <Link activeClass="active" to="start" spy={true} smooth={true} offset={50} duration={500}data-text="ToBottom">Início
+                        </Link>
+                    </li>
+                    <li className="py-4">
+                        <Link activeClass="active" to="flavors" spy={true} smooth={true} offset={50} duration={500} data-text="ToBottom">Sabores
+                        </Link>
+                    </li>
+                    <li className="py-4">
+                        <Link activeClass="active" to="prices" spy={true} smooth={true} offset={50} duration={500} data-text="ToBottom">Preços
+                        </Link>
+                    </li>
                     <li className="py-4"><a>Contatos</a></li>
                 </div>
             </div>
