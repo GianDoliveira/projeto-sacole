@@ -9,9 +9,7 @@ export default function Flavors() {
   speed: 500,
   fade: true,
   cssEase: 'linear'
-    };
-
-
+};
 
     return (
         <section className="relative top-20 mb-12 max-w-full h-auto overflow-hidden">
