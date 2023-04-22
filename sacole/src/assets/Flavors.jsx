@@ -12,7 +12,7 @@ export default function Flavors() {
 };
 
     return (
-        <section className="relative top-20 mb-12 max-w-full h-auto overflow-hidden">
+        <section className="relative top-10 mb-12 max-w-full h-auto overflow-hidden">
             <h1 className="text-3xl mx-5">Sabores Comuns</h1>
             <Slider {...settings} >
                 <div className="flex justify-center text-center bg-yellow-200 rounded-lg">

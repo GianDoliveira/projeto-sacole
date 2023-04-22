@@ -18,6 +18,7 @@ function App() {
       <main className="bg-yellow-200 h-screen" id="contacts">
         <Contacts/>
       </main>
+      <footer className="w-screen text-center bg-yellow-300">© Gian de Oliveira. All rigths reserved</footer>
     </>
   )
 }

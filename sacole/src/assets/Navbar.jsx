@@ -11,13 +11,13 @@ export default function Navbar() {
         if (!isMenuClicked) {
             setBurgerClass("burger-bar clicked")
             setMenuClass("menu visible")
-        }
-        else {
+        } else {
             setBurgerClass("burger-bar unclicked")
             setMenuClass("menu hidden")
         }
         setIsMenuClicked(!isMenuClicked)
     }
+
     return (
         <div className="w-screen fixed top-0 left-0 z-10">
             <nav>
@@ -34,22 +34,21 @@ export default function Navbar() {
             <div className={menu_class}>
                 <div className="z-10 relative top-48 text-3xl list-none flex flex-col justify-center items-center font-[Dosis] ">
                     <li className="py-4">
-                        <Link activeClass="active" to="start" spy={true} smooth={true} offset={50} duration={500}data-text="ToBottom">Início
+                        <Link activeClass="active" to="start" spy={true} smooth={true} offset={-50} duration={500} data-text="ToBottom" onClick={updateMenu}>Início
                         </Link>
                     </li>
                     <li className="py-4">
-                        <Link activeClass="active" to="flavors" spy={true} smooth={true} offset={50} duration={500} data-text="ToBottom">Sabores
+                        <Link activeClass="active" to="flavors" spy={true} smooth={true} offset={-50} duration={500} data-text="ToBottom" onClick={updateMenu}>Sabores
                         </Link>
                     </li>
                     <li className="py-4">
-                        <Link activeClass="active" to="prices" spy={true} smooth={true} offset={50} duration={500} data-text="ToBottom">Preços
+                        <Link activeClass="active" to="prices" spy={true} smooth={true} offset={-50} duration={500} data-text="ToBottom" onClick={updateMenu}>Preços
                         </Link>
                     </li>
                     <li className="py-4">
-                        <Link activeClass="active" to="contacts" spy={true} smooth={true} offset={50} duration={500} data-text="ToBottom">Contatos
+                        <Link activeClass="active" to="contacts" spy={true} smooth={true} offset={-50} duration={500} data-text="ToBottom" onClick={updateMenu}>Contatos
                         </Link>
                     </li>
-                    
                 </div>
             </div>
         </div>
