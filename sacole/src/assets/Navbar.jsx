@@ -19,7 +19,7 @@ export default function Navbar() {
     }
 
     return (
-        <div className="w-screen fixed top-0 left-0 z-10">
+        <div className="w-screen fixed top-0 left-0 z-10 justify-center">
             <nav>
                 <div className="burger-menu" onClick={updateMenu}>
                     <div className={burger_class}></div>
@@ -46,7 +46,7 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li className="py-4">
-                        <Link activeClass="active" to="contacts" spy={true} smooth={true} offset={-50} duration={500} data-text="ToBottom" onClick={updateMenu}>Contatos
+                        <Link activeClass="active" to="contacts" spy={true} smooth={true} offset={-50} duration={500} data-text="ToBottom" onClick={updateMenu}>Contato
                         </Link>
                     </li>
                 </div>

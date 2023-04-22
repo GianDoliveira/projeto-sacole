@@ -13,7 +13,7 @@ export default function CommonItem(props) {
         <div>
             <div className="relative top-10">
                 <h2 className="text-xl">Sacolé Comum</h2>
-                <p className="text-7xl">R${total},00</p>
+                <p className="text-6xl">R${total},00</p>
             </div>
             <label className="relative top-20 text-2xl">
                 Quantidade:

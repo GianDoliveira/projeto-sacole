@@ -12,7 +12,7 @@ function App() {
       <main className=" bg-zinc-200" id="flavors">
         <Flavors/>
       </main>
-      <main className="bg-orange-300 h-screen" id="prices">
+      <main className="bg-orange-300" id="prices">
         <Prices/>
       </main>
       <main className="bg-yellow-200 h-screen" id="contacts">
