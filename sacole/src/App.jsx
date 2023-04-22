@@ -1,6 +1,7 @@
 import Home from "./assets/Home"
 import Flavors from "./assets/Flavors"
 import Prices from "./assets/Prices"
+import Contacts from "./assets/Contacts"
 
 function App() {
   return (
@@ -11,11 +12,11 @@ function App() {
       <main className=" bg-zinc-200" id="flavors">
         <Flavors/>
       </main>
-      <main className="h-screen bg-orange-300" id="prices">
+      <main className="bg-orange-300 h-screen" id="prices">
         <Prices/>
       </main>
-      <main className="">
-
+      <main className="bg-yellow-200 h-screen" id="contacts">
+        <Contacts/>
       </main>
     </>
   )

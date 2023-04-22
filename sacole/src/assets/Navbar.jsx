@@ -45,7 +45,11 @@ export default function Navbar() {
                         <Link activeClass="active" to="prices" spy={true} smooth={true} offset={50} duration={500} data-text="ToBottom">Preços
                         </Link>
                     </li>
-                    <li className="py-4"><a>Contatos</a></li>
+                    <li className="py-4">
+                        <Link activeClass="active" to="contacts" spy={true} smooth={true} offset={50} duration={500} data-text="ToBottom">Contatos
+                        </Link>
+                    </li>
+                    
                 </div>
             </div>
         </div>
