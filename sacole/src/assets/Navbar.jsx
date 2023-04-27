@@ -27,12 +27,12 @@ export default function Navbar() {
                     <div className={burger_class}></div>
                 </div>
 
-                <h1 className="text-4xl font-['Alkatra'] left-14 top-2 relative">Sacolé</h1>
+                <h1 className="text-4xl font-['Alkatra'] left-14 top-2 relative min-[400px]:left-32 min-[600px]:left-40 min-[768px]:left-60">Sacolé</h1>
 
             </nav>
 
             <div className={menu_class}>
-                <div className="z-10 relative top-48 text-3xl list-none flex flex-col justify-center items-center font-[Dosis] ">
+                <div className="z-10 relative top-48 text-3xl list-none flex flex-col justify-center items-center font-[Dosis] min-[600px]:text-4xl">
                     <li className="py-4">
                         <Link activeClass="active" to="start" spy={true} smooth={true} offset={-50} duration={500} data-text="ToBottom" onClick={updateMenu}>Início
                         </Link>

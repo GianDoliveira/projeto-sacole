@@ -9,7 +9,7 @@ function App() {
       <main className="image h-screen" id="start"> 
         <Home/>
       </main>
-      <main className=" bg-zinc-200" id="flavors">
+      <main className="bg-yellow-200" id="flavors">
         <Flavors/>
       </main>
       <main className="bg-orange-300" id="prices">
