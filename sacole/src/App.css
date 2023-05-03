@@ -1,7 +1,7 @@
 /*                Background                */
 .image::before {
     content: "";
-    background-image: url("./Geladinhos.jpg");
+    background-image: url("https://i.pinimg.com/564x/3b/9c/4c/3b9c4c728c6b3a7f1470abf30995562b.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
