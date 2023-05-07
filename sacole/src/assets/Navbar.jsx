@@ -19,33 +19,30 @@ export default function Navbar() {
     }
 
     return (
-        <div className="w-screen fixed top-0 left-0 z-10 justify-center">
-            <nav>
+        <div className="fixed top-0 left-0 z-10 justify-center">
+            <nav className="flex w-full h-20 bg-yellow-300 justify-between p-4 rounded-lg">
                 <div className="burger-menu" onClick={updateMenu}>
                     <div className={burger_class}></div>
                     <div className={burger_class}></div>
                     <div className={burger_class}></div>
                 </div>
-
-                <h1 className="text-4xl font-['Alkatra'] left-14 top-2 relative min-[400px]:left-32 min-[600px]:left-40 min-[768px]:left-60">Sacolé</h1>
-
             </nav>
 
             <div className={menu_class}>
                 <div className="z-10 relative top-48 text-3xl list-none flex flex-col justify-center items-center font-[Dosis] min-[600px]:text-4xl">
-                    <li className="py-4">
+                    <li className="py-4 cursor-pointer">
                         <Link activeClass="active" to="start" spy={true} smooth={true} offset={-50} duration={500} data-text="ToBottom" onClick={updateMenu}>Início
                         </Link>
                     </li>
-                    <li className="py-4">
+                    <li className="py-4 cursor-pointer">
                         <Link activeClass="active" to="flavors" spy={true} smooth={true} offset={-50} duration={500} data-text="ToBottom" onClick={updateMenu}>Sabores
                         </Link>
                     </li>
-                    <li className="py-4">
+                    <li className="py-4 cursor-pointer">
                         <Link activeClass="active" to="prices" spy={true} smooth={true} offset={-50} duration={500} data-text="ToBottom" onClick={updateMenu}>Preços
                         </Link>
                     </li>
-                    <li className="py-4">
+                    <li className="py-4 cursor-pointer">
                         <Link activeClass="active" to="contacts" spy={true} smooth={true} offset={-50} duration={500} data-text="ToBottom" onClick={updateMenu}>Contato
                         </Link>
                     </li>

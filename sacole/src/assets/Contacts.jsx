@@ -3,9 +3,9 @@ import { BsFillTelephoneFill, BsWhatsapp } from "react-icons/bs"
 
 export default function Contacts() {
     return (
-        <section className="flex justify-center items-center flex-col">
-            <h1 className="text-4xl relative top-10">Contato</h1>
-            <div className="relative top-12">
+        <section className="flex justify-center items-center flex-col relative top-8">
+            <h1 className="text-4xl relative top-10 ">Contato</h1>
+            <div className="relative top-12 md:flex">
                 <div className="m-5 text-2xl">
                     <AiOutlineMail />
                     <h2 className="py-1">E-mail</h2>

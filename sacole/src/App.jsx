@@ -12,13 +12,13 @@ function App() {
       <main className="bg-yellow-200" id="flavors">
         <Flavors/>
       </main>
-      <main className="bg-orange-300" id="prices">
+      <main className="bg-orange-300 md:h-96" id="prices">
         <Prices/>
       </main>
-      <main className="bg-yellow-200 h-screen" id="contacts">
+      <main className="bg-yellow-200 h-screen md:h-96" id="contacts">
         <Contacts/>
       </main>
-      <footer className="w-screen text-center bg-yellow-300">© Gian de Oliveira. All rigths reserved</footer>
+      <footer className="text-center bg-yellow-300">© Gian de Oliveira. All rigths reserved</footer>
     </>
   )
 }

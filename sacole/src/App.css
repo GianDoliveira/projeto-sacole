@@ -18,15 +18,6 @@
 }
 
 /*                Navbar                */
-nav {
-    display: flex;
-    width: 100%;
-    height: 5em;
-    background-color: yellow;
-    display: flex;
-    justify-content: flex-start;
-    padding: 1em;
-}
 .burger-menu {
     height: 100%;
     width: 4em;
@@ -79,3 +70,11 @@ nav {
     transition: cubic-bezier(0.175, 0.885, 0.32, 1275) 0.5%;
 }
 
+/*        RESPONSIVE              */
+
+@media screen and (min-width: 768px) {
+	.menu {
+        width: 30%;
+        
+    }
+}
