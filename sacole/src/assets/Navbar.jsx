@@ -20,7 +20,7 @@ export default function Navbar() {
 
     return (
         <div className="fixed top-0 left-0 z-10 justify-center">
-            <nav className="flex w-full h-20 bg-yellow-300 justify-between p-4 rounded-lg">
+            <nav className="flex h-16 bg-yellow-300 justify-between p-2 rounded-lg">
                 <div className="burger-menu" onClick={updateMenu}>
                     <div className={burger_class}></div>
                     <div className={burger_class}></div>

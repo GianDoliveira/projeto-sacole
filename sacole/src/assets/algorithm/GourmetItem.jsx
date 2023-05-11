@@ -9,6 +9,10 @@ export default function GourmetItem(props) {
         setTotal(newTotal);
     }
 
+    function handleKeyDown(e) {
+        e.preventDefault();
+      }
+
     return (
         <div>
             <div className="relative top-10">
@@ -18,12 +22,13 @@ export default function GourmetItem(props) {
             <label className="relative top-20 text-2xl">
                 Quantidade:
                 <input
-                    className="w-14 text-center"
+                    className="w-14 text-center caret-transparent outline-none"
                     type="number"
                     min="0"
-                    max="10"
+                    max="100"
                     value={props.quantity}
                     onChange={handleQuantityChange}
+                    onKeyDown={handleKeyDown}
                 />
             </label>
         </div>

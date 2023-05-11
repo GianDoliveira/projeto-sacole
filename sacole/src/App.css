@@ -20,7 +20,6 @@
 /*                Navbar                */
 .burger-menu {
     height: 100%;
-    width: 4em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
